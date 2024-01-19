@@ -1,8 +1,15 @@
+import {Box} from "@mui/material";
+
 const Body = () => {
     return (
-        <div>
+        <Box
+            display='flex'
+            flexDirection='column'
+            alignItems='center'
+            justifyContent='center'
+            flexGrow={1}>
             Body
-        </div>
+        </Box>
     );
 }
 

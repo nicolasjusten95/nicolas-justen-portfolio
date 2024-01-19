@@ -3,18 +3,22 @@ import './App.css';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Body from "./components/body/Body";
-import {Box} from "@mui/material";
+import {Box, ThemeProvider} from "@mui/material";
+import {theme} from "./utils/MuiTheme";
 
 function App() {
     return (
-        <Box
-            minHeight={'100vh'}
-            display={'flex'}
-            flexDirection={'column'}>
-            <Header/>
-            <Body/>
-            <Footer/>
-        </Box>
+        <ThemeProvider theme={theme}>
+            <Box
+                minHeight={'100vh'}
+                display={'flex'}
+                flexDirection={'column'}
+                maxWidth={'100vw'}>
+                <Header/>
+                <Body/>
+                <Footer/>
+            </Box>
+        </ThemeProvider>
     );
 }
 
