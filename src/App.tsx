@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Body from "./components/body/Body";
-import {Box, ThemeProvider} from "@mui/material";
-import {theme} from "./utils/MuiTheme";
+import {Box, CssBaseline, ThemeProvider} from "@mui/material";
+import {themeDark, themeLight} from "./utils/MuiTheme";
 
 function App() {
+
+    const [light, setLight] = useState<boolean>(true);
+
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={light ? themeLight : themeDark}>
+            <CssBaseline />
             <Box
                 minHeight={'100vh'}
                 display={'flex'}

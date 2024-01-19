@@ -3,7 +3,6 @@ import {
     Box,
     Button,
     IconButton,
-    ListItemIcon,
     ListItemText,
     Menu,
     MenuItem,
@@ -12,11 +11,10 @@ import {
     Toolbar,
     Typography
 } from "@mui/material";
-import BarChartIcon from '@mui/icons-material/BarChart';
 import MenuIcon from '@mui/icons-material/Menu';
 import React, {MouseEvent, useState} from "react";
-import SearchIcon from '@mui/icons-material/Search';
 import {Page} from "../../api/NavBarApi";
+import {pages, title} from "../../data/HeaderData";
 
 
 interface HeaderProps {
@@ -34,16 +32,9 @@ const Header = (props: HeaderProps) => {
         setAnchorNav(null);
     };
 
-    const title: string = 'Nicolas Justen';
-    const icon: React.ReactElement = <BarChartIcon/>;
-    const pages: Page [] = [
-        {name: 'Test', icon: <SearchIcon/>, onClick: () => null, key: 1},
-    ];
-
     const getButtonFromPage = (page: Page): React.ReactElement => {
         return <Button
             key={page.key}
-            startIcon={page.icon}
             onClick={page.onClick}
             color='inherit'>
             <Typography>{page.name}</Typography>
@@ -54,7 +45,6 @@ const Header = (props: HeaderProps) => {
         return <MenuItem
             key={page.key}
             onClick={page.onClick}>
-            <ListItemIcon>{page.icon}</ListItemIcon>
             <ListItemText>
                 <Typography>{page.name}</Typography>
             </ListItemText>
@@ -66,14 +56,6 @@ const Header = (props: HeaderProps) => {
             position='static'
             sx={{mb: 2}}>
             <Toolbar>
-                <IconButton
-                    size='large'
-                    edge='start'
-                    color='inherit'
-                    aria-label='logo'
-                    onClick={() => null}>
-                    {icon}
-                </IconButton>
                 <Typography
                     variant='h6'
                     component='div'
