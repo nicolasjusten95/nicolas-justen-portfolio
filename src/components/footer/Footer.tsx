@@ -1,5 +1,6 @@
 import {Box, IconButton, Stack, Typography} from "@mui/material";
 import {GitHub, LinkedIn, Mail} from "@mui/icons-material";
+import {title} from "../../data/FooterData";
 
 
 const Footer = () => {
@@ -7,14 +8,14 @@ const Footer = () => {
         <Box
             component='footer'
             width='100%'
-            sx={{backgroundColor: '#e8e4db'}}
+            bgcolor={'background.paper'}
             mt={2}
             display='flex'
             flexDirection='column'
             alignItems='center'
             p={2}>
             <Typography>
-                Nicolas Justen
+                {title}
             </Typography>
             <Stack direction='row'>
                 <IconButton href={'mailto:nicolas.justen95@gmail.com'}>

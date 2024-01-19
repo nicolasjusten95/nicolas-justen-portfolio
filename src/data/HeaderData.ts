@@ -1,6 +1,7 @@
 import {Page} from "../api/NavBarApi";
 
 export const title: string = 'Nicolas Justen';
+
 export const pages: Page [] = [
     {name: 'Home', onClick: () => null, key: 1},
     {name: 'Skills', onClick: () => null, key: 2},
