@@ -1,6 +1,7 @@
 import {Box, IconButton, Stack, Typography} from "@mui/material";
 import {GitHub, LinkedIn, Mail} from "@mui/icons-material";
 import {title} from "../../data/FooterData";
+import {githubIcon, linkedInIcon, mailIcon} from "../../data/SocialMediaIcons";
 
 
 const Footer = () => {
@@ -18,15 +19,9 @@ const Footer = () => {
                 {title}
             </Typography>
             <Stack direction='row'>
-                <IconButton href={'mailto:nicolas.justen95@gmail.com'}>
-                    <Mail fontSize='large' color='secondary'/>
-                </IconButton>
-                <IconButton href={'https://de.linkedin.com/in/nicolas-justen-232324178'}>
-                    <LinkedIn fontSize='large' color='secondary'/>
-                </IconButton>
-                <IconButton href={'https://github.com/nicolasjusten95'}>
-                    <GitHub fontSize='large' color='secondary'/>
-                </IconButton>
+                {mailIcon}
+                {linkedInIcon}
+                {githubIcon}
             </Stack>
         </Box>
     );

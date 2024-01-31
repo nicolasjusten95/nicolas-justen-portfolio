@@ -1,4 +1,5 @@
 import {Box} from "@mui/material";
+import Home from "./home/Home";
 
 const Body = () => {
     return (
@@ -8,7 +9,7 @@ const Body = () => {
             alignItems='center'
             justifyContent='center'
             flexGrow={1}>
-            Body
+            <Home/>
         </Box>
     );
 }
