@@ -8,7 +8,7 @@ import {themeDark, themeLight} from "./utils/MuiTheme";
 
 function App() {
 
-    const [light, setLight] = useState<boolean>(true);
+    const [light, setLight] = useState<boolean>(false);
 
     return (
         <ThemeProvider theme={light ? themeLight : themeDark}>

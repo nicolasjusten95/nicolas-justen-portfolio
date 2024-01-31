@@ -19,14 +19,16 @@ export const themeLight = createTheme({
 export const themeDark = createTheme({
     palette: {
         background: {
-            default: "#272935",
-            paper: "#e8e4db"
+            default: "#1d212f",
         },
         primary: {
-            main: "#62874b"
+            main: "#2a2f40",
         },
         secondary: {
-            main: "#e8e4db"
-        }
+            main: "#bdc6ff",
+        },
+        text: {
+            primary: "#e1e6f3",
+        },
     }
 });

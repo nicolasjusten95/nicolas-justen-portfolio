@@ -8,24 +8,24 @@ const Footer = () => {
         <Box
             component='footer'
             width='100%'
-            bgcolor={'background.paper'}
+            bgcolor={'primary.main'}
             mt={2}
             display='flex'
             flexDirection='column'
             alignItems='center'
             p={2}>
-            <Typography>
+            <Typography color='text.primary'>
                 {title}
             </Typography>
             <Stack direction='row'>
                 <IconButton href={'mailto:nicolas.justen95@gmail.com'}>
-                    <Mail fontSize='large'/>
+                    <Mail fontSize='large' color='secondary'/>
                 </IconButton>
                 <IconButton href={'https://de.linkedin.com/in/nicolas-justen-232324178'}>
-                    <LinkedIn fontSize='large'/>
+                    <LinkedIn fontSize='large' color='secondary'/>
                 </IconButton>
                 <IconButton href={'https://github.com/nicolasjusten95'}>
-                    <GitHub fontSize='large'/>
+                    <GitHub fontSize='large' color='secondary'/>
                 </IconButton>
             </Stack>
         </Box>

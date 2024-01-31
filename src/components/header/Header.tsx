@@ -37,7 +37,7 @@ const Header = (props: HeaderProps) => {
             key={page.key}
             onClick={page.onClick}
             color='inherit'>
-            <Typography>{page.name}</Typography>
+            <Typography color='text.primary'>{page.name}</Typography>
         </Button>;
     };
 
@@ -46,7 +46,7 @@ const Header = (props: HeaderProps) => {
             key={page.key}
             onClick={page.onClick}>
             <ListItemText>
-                <Typography>{page.name}</Typography>
+                <Typography color='text.primary'>{page.name}</Typography>
             </ListItemText>
         </MenuItem>
     };
@@ -59,7 +59,8 @@ const Header = (props: HeaderProps) => {
                 <Typography
                     variant='h6'
                     component='div'
-                    sx={{flexGrow: 1}}>
+                    sx={{flexGrow: 1}}
+                    color='text.primary'>
                     {title}
                 </Typography>
                 {/*Desktop*/}
