@@ -53,7 +53,7 @@ const Header = (props: HeaderProps) => {
 
     return (
         <AppBar
-            position='static'
+            position='sticky'
             sx={{mb: 2}}>
             <Toolbar>
                 <Typography

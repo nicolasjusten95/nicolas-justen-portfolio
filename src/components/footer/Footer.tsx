@@ -1,7 +1,6 @@
-import {Box, IconButton, Stack, Typography} from "@mui/material";
-import {GitHub, LinkedIn, Mail} from "@mui/icons-material";
+import {Box, Typography} from "@mui/material";
 import {title} from "../../data/FooterData";
-import {githubIcon, linkedInIcon, mailIcon} from "../../data/SocialMediaIcons";
+import {socialMediaIcons} from "../../data/SocialMediaIcons";
 
 
 const Footer = () => {
@@ -18,11 +17,7 @@ const Footer = () => {
             <Typography color='text.primary'>
                 {title}
             </Typography>
-            <Stack direction='row'>
-                {mailIcon}
-                {linkedInIcon}
-                {githubIcon}
-            </Stack>
+            {socialMediaIcons}
         </Box>
     );
 };

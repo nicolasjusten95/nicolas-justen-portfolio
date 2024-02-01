@@ -1,5 +1,7 @@
 import {Box} from "@mui/material";
 import Home from "./home/Home";
+import Skills from "./skills/Skills";
+
 
 const Body = () => {
     return (
@@ -10,6 +12,7 @@ const Body = () => {
             justifyContent='center'
             flexGrow={1}>
             <Home/>
+            <Skills/>
         </Box>
     );
 }
