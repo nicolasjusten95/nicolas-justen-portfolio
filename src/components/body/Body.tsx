@@ -1,6 +1,7 @@
 import {Box} from "@mui/material";
 import Home from "./home/Home";
 import Skills from "./skills/Skills";
+import Experience from "./experience/Experience";
 
 
 const Body = () => {
@@ -10,9 +11,11 @@ const Body = () => {
             flexDirection='column'
             alignItems='center'
             justifyContent='center'
-            flexGrow={1}>
+            flexGrow={1}
+            id='Home'>
             <Home/>
             <Skills/>
+            <Experience/>
         </Box>
     );
 }

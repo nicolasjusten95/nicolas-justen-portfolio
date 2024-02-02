@@ -7,7 +7,6 @@ import MyLink from "../util/MyLink";
 const Home = () => {
     return (
         <Box
-            id='Home'
             mt='50px'
             display='flex'
             flexDirection='row'
@@ -22,7 +21,7 @@ const Home = () => {
                     alt={"Nicolas Justen"}
                     src={profilePicture}
                     sx={{width: 'auto', height: 'auto'}}/>
-                <Typography color='text.primary' variant='h4' p='8px'>Nicolas Justen</Typography>
+                <Typography color='text.primary' variant='h4' m='8px'>Nicolas Justen</Typography>
                 <Typography color='text.primary' variant='h6'>Software Developer</Typography>
                 <Typography color='text.primary' variant='h6'>
                     <MyLink href='https://www.sivis.com/' text='SIVIS GmbH'/>
@@ -30,8 +29,8 @@ const Home = () => {
                 {socialMediaIcons}
             </Box>
             <Box width='70%'>
-                <Typography color='text.primary' variant='h4' pb='15px'>Biography</Typography>
-                <Typography color='text.primary' variant='h6' pb='15px'>
+                <Typography color='text.primary' variant='h4' mb='15px'>Biography</Typography>
+                <Typography color='text.primary' variant='h6' mb='15px'>
                     I am a Software Developer with over two years of experience in shipping core features and
                     algorithms. My current employer&nbsp;
                     <MyLink href='https://www.sivis.com/' text='SIVIS GmbH'/>

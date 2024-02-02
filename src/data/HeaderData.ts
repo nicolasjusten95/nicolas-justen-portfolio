@@ -3,7 +3,7 @@ import {Page} from "../api/NavBarApi";
 export const title: string = 'Nicolas Justen';
 
 const getScrollFunction = (id: string) => {
-    return () => document.getElementById(id)?.scrollIntoView({});
+    return () => document.getElementById(id)?.scrollIntoView({behavior: 'smooth'});
 }
 
 export const pages: Page [] = [
