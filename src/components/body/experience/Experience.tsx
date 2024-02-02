@@ -13,7 +13,7 @@ const Experience = () => {
             justifyContent='space-between'
             width='80%'
             sx={{scrollMargin: '130px'}}>
-            <Box width='10%'>
+            <Box width='15%'>
                 <Typography color='text.primary' variant='h4'>
                     Experience
                 </Typography>

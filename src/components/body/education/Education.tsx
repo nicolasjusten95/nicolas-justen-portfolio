@@ -24,7 +24,7 @@ const Education = () => {
                     ))}
                 </Timeline>
             </Box>
-            <Box width='10%'>
+            <Box width='15%'>
                 <Typography color='text.primary' variant='h4'>
                     Education
                 </Typography>
