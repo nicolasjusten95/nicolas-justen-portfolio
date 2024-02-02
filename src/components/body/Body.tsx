@@ -2,6 +2,7 @@ import {Box} from "@mui/material";
 import Home from "./home/Home";
 import Skills from "./skills/Skills";
 import Experience from "./experience/Experience";
+import Education from "./education/Education";
 
 
 const Body = () => {
@@ -16,6 +17,7 @@ const Body = () => {
             <Home/>
             <Skills/>
             <Experience/>
+            <Education/>
         </Box>
     );
 }

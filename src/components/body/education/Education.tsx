@@ -1,35 +1,35 @@
 import {Box, Typography} from "@mui/material";
-import Timeline from '@mui/lab/Timeline';
-import {experiences} from "./Experiences";
+import Timeline from "@mui/lab/Timeline";
 import MyTimelineItem from "../util/MyTimelineItem";
+import {educations} from "./Educations";
 
-const Experience = () => {
+const Education = () => {
     return (
         <Box
-            id='Experience'
+            id='Education'
             mt='150px'
             display='flex'
             flexDirection='row'
             justifyContent='space-between'
             width='80%'>
-            <Box width='10%'>
-                <Typography color='text.primary' variant='h4'>
-                    Experience
-                </Typography>
-            </Box>
             <Box
                 width='85%'
                 display='flex'
                 flexDirection='column'
                 justifyContent='start'>
-                <Timeline>
-                    {experiences.map(exp => (
+                <Timeline position='left'>
+                    {educations.map(exp => (
                         <MyTimelineItem {...exp}/>
                     ))}
                 </Timeline>
+            </Box>
+            <Box width='10%'>
+                <Typography color='text.primary' variant='h4'>
+                    Education
+                </Typography>
             </Box>
         </Box>
     );
 };
 
-export default Experience;
+export default Education;
