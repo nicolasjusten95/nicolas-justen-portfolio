@@ -93,7 +93,7 @@ const Experience = () => {
         <Box display='flex' flexDirection='column'>
             <Box display='flex' flexDirection='row' width='100%' alignItems='center'>
                 <Box m='20px'>
-                    <img src={mercedesLogo} alt='SIVIS GmbH' width='100px'/>
+                    <img src={mercedesLogo} alt='Mercedes-Benz AG' width='100px'/>
                 </Box>
                 <Box>
                     <Typography color='text.primary' variant='h6'>Internship - Bachelor's Thesis Production
@@ -124,7 +124,7 @@ const Experience = () => {
         <Box display='flex' flexDirection='column'>
             <Box display='flex' flexDirection='row' width='100%' alignItems='center'>
                 <Box m='20px'>
-                    <img src={mercedesLogo} alt='SIVIS GmbH' width='100px'/>
+                    <img src={mercedesLogo} alt='Mercedes-Benz AG' width='100px'/>
                 </Box>
                 <Box>
                     <Typography color='text.primary' variant='h6'>Internship - Production Planning</Typography>
