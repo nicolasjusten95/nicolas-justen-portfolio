@@ -40,7 +40,7 @@ const Publications = () => {
                 display='flex'
                 flexDirection='column'
                 justifyContent='start'>
-                <Box>
+                <Box mt='30px'>
                     <Typography color='text.primary' variant='h6'>
                         Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2023).&nbsp;
                         <MyLink

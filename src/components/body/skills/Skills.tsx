@@ -14,7 +14,7 @@ const Skills = () => {
             justifyContent='space-between'
             width='80%'
             sx={{scrollMargin: '130px'}}>
-            <Box width='85%'>
+            <Box width='85%' mt='30px'>
                 <Typography color='text.primary' variant='h6'>Programming Languages</Typography>
                 <Stack spacing={chipSpacing} direction='row' m={chipSpacing}>
                     <Chip label='Java' color={chipColor}></Chip>
