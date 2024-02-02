@@ -12,7 +12,8 @@ const Skills = () => {
             display='flex'
             flexDirection='row'
             justifyContent='space-between'
-            width='80%'>
+            width='80%'
+            sx={{scrollMargin: '130px'}}>
             <Box width='80%'>
                 <Typography color='text.primary' variant='h6'>Programming Languages</Typography>
                 <Stack spacing={chipSpacing} direction='row' m={chipSpacing}>

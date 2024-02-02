@@ -7,11 +7,13 @@ import MyLink from "../util/MyLink";
 const Home = () => {
     return (
         <Box
+            id='Home'
             mt='50px'
             display='flex'
             flexDirection='row'
             justifyContent='space-between'
-            width='80%'>
+            width='80%'
+            sx={{scrollMargin: '130px'}}>
             <Box
                 display='flex'
                 flexDirection='column'

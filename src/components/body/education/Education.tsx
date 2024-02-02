@@ -11,7 +11,8 @@ const Education = () => {
             display='flex'
             flexDirection='row'
             justifyContent='space-between'
-            width='80%'>
+            width='80%'
+            sx={{scrollMargin: '130px'}}>
             <Box
                 width='85%'
                 display='flex'

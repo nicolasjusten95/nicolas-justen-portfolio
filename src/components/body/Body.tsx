@@ -12,8 +12,7 @@ const Body = () => {
             flexDirection='column'
             alignItems='center'
             justifyContent='center'
-            flexGrow={1}
-            id='Home'>
+            flexGrow={1}>
             <Home/>
             <Skills/>
             <Experience/>

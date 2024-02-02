@@ -11,7 +11,8 @@ export const pages: Page [] = [
     {name: 'Skills', onClick: getScrollFunction('Skills'), key: 2},
     {name: 'Experience', onClick: getScrollFunction('Experience'), key: 3},
     {name: 'Education', onClick: getScrollFunction('Education'), key: 4},
-    {name: 'Projects', onClick: getScrollFunction('Projects'), key: 5},
-    {name: 'Volunteer Activities', onClick: getScrollFunction('Volunteer Activities'), key: 6},
+    {name: 'Publications', onClick: getScrollFunction('Publications'), key: 5},
+    {name: 'Projects', onClick: getScrollFunction('Projects'), key: 6},
+    {name: 'Volunteer Activities', onClick: getScrollFunction('Volunteer Activities'), key: 7},
 ];
 
