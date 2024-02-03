@@ -1,6 +1,6 @@
 import {Avatar, Box, Typography} from "@mui/material";
 import profilePicture from '../../../images/profile_picture.jpg';
-import {socialMediaIcons} from "../../../data/SocialMediaIcons";
+import {socialMediaIcons} from "../util/SocialMediaIcons";
 import MyLink from "../util/MyLink";
 
 

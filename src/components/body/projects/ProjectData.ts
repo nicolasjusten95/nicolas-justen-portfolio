@@ -7,7 +7,7 @@ const algorithmVisualizer: ProjectProps = {
     image: algorithmVisualizerImage,
     title: 'Algorithm Visualizer',
     description: 'A responsive web application showcasing major search and sorting algorithms with interactive visualizations.',
-    technologies: ['Typescript', 'React', 'HTML', 'CSS', 'Git'],
+    technologies: ['Algorithms', 'Typescript', 'React', 'Git'],
     links: [
         {href: 'https://nicolasjusten95.github.io/algorithm-visualizer/', text: 'Website'},
         {href: 'https://github.com/nicolasjusten95/algorithm-visualizer', text: 'Github'}
@@ -21,7 +21,6 @@ const relaxationAndVitality: ProjectProps = {
     technologies: ['WordPress', 'Hosting', 'Webdesign'],
     links: [
         {href: 'https://relaxationandvitality.de/', text: 'Website'},
-        {href: 'https://github.com/nicolasjusten95/algorithm-visualizer', text: 'Github'}
     ],
 };
 

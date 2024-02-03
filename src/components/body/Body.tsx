@@ -5,6 +5,7 @@ import Experience from "./experience/Experience";
 import Education from "./education/Education";
 import Publications from "./publications/Publications";
 import Projects from "./projects/Projects";
+import PersonalInterests from "./personalInterests/PersonalInterests";
 
 
 const Body = () => {
@@ -21,6 +22,7 @@ const Body = () => {
             <Education/>
             <Publications/>
             <Projects/>
+            <PersonalInterests/>
         </Box>
     );
 }

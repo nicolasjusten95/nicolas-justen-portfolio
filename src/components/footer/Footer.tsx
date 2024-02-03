@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
-import {title} from "../../data/FooterData";
-import {socialMediaIcons} from "../../data/SocialMediaIcons";
+import {title} from "./FooterData";
+import {socialMediaIcons} from "../body/util/SocialMediaIcons";
 
 
 const Footer = () => {

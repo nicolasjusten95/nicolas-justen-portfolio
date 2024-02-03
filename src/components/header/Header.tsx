@@ -14,7 +14,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import React, {MouseEvent, useState} from "react";
 import {Page} from "../../api/NavBarApi";
-import {pages, title} from "../../data/HeaderData";
+import {pages, title} from "./HeaderData";
 
 
 interface HeaderProps {

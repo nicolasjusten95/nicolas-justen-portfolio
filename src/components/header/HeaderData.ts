@@ -1,4 +1,4 @@
-import {Page} from "../api/NavBarApi";
+import {Page} from "../../api/NavBarApi";
 
 export const title: string = 'Nicolas Justen';
 
@@ -13,6 +13,5 @@ export const pages: Page [] = [
     {name: 'Education', onClick: getScrollFunction('Education'), key: 4},
     {name: 'Publications', onClick: getScrollFunction('Publications'), key: 5},
     {name: 'Projects', onClick: getScrollFunction('Projects'), key: 6},
-    {name: 'Volunteer Activities', onClick: getScrollFunction('Volunteer Activities'), key: 7},
+    {name: 'Personal Interests', onClick: getScrollFunction('PersonalInterests'), key: 7},
 ];
-
