@@ -1,9 +1,9 @@
-import {ProjectProps} from "./Project";
+import {PaperItemProps} from "../util/PaperItem";
 import algorithmVisualizerImage from "../../../images/algorithm_visualizer.png";
 import relaxationAndVitalityImage from "../../../images/relaxation_and_vitality.png";
 import myPortfolioImage from "../../../images/developer_portfolio.png";
 
-const algorithmVisualizer: ProjectProps = {
+const algorithmVisualizer: PaperItemProps = {
     image: algorithmVisualizerImage,
     title: 'Algorithm Visualizer',
     description: 'A responsive web application showcasing major search and sorting algorithms with interactive visualizations.',
@@ -14,7 +14,7 @@ const algorithmVisualizer: ProjectProps = {
     ],
 };
 
-const relaxationAndVitality: ProjectProps = {
+const relaxationAndVitality: PaperItemProps = {
     image: relaxationAndVitalityImage,
     title: 'Professional Website',
     description: 'A professional and user-friendly website for a regional massage business, enhancing online presence and client engagement.',
@@ -24,7 +24,7 @@ const relaxationAndVitality: ProjectProps = {
     ],
 };
 
-const myPortfolio: ProjectProps = {
+const myPortfolio: PaperItemProps = {
     image: myPortfolioImage,
     title: 'Developer Portfolio',
     description: 'My developer portfolio website showcasing my achievements as a software developer.',

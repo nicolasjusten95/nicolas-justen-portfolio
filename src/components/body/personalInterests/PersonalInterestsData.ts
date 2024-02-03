@@ -1,11 +1,11 @@
-import {ProjectProps} from "../projects/Project";
+import {PaperItemProps} from "../util/PaperItem";
 import runningImage from "../../../images/running.jpg";
 import skiingImage from "../../../images/ski.jpg";
 import guitarImage from "../../../images/guitar.jpg";
 import travelImage from "../../../images/travel.jpg";
 
 
-const running: ProjectProps = {
+const running: PaperItemProps = {
     image: runningImage,
     title: 'Running',
     description: 'I love to go running on trails through the local forests. I am also occasionally competing in races where I recently finished my first Marathon.',
@@ -13,7 +13,7 @@ const running: ProjectProps = {
     links: [],
 };
 
-const skiing: ProjectProps = {
+const skiing: PaperItemProps = {
     image: skiingImage,
     title: 'Alpine Skiing',
     description: 'During the winter season I love to go skiing. I am also helping as a volunteer ski instructor for the Ski- und Snowboardschule Schönbuch e. V., a regional skiing club.',
@@ -23,7 +23,7 @@ const skiing: ProjectProps = {
     ],
 };
 
-const guitar: ProjectProps = {
+const guitar: PaperItemProps = {
     image: guitarImage,
     title: 'Guitar',
     description: 'I have been learning to play the guitar for a couple of years now. Mostly I`m playing classic rock songs on my electric guitar.',
@@ -31,7 +31,7 @@ const guitar: ProjectProps = {
     links: [],
 };
 
-const travel: ProjectProps = {
+const travel: PaperItemProps = {
     image: travelImage,
     title: 'Traveling',
     description: 'I love to travel, to visit new places and to learn about new cultures. Among others I did work and travel for six months in Australia and a semester abroad in Mexico.',
@@ -39,7 +39,7 @@ const travel: ProjectProps = {
     links: [],
 };
 
-export const personalInterestsData: ProjectProps[] = [
+export const personalInterestsData: PaperItemProps[] = [
     skiing,
     running,
     guitar,

@@ -1,7 +1,7 @@
-import MyLink, {MyLinkProps} from "../util/MyLink";
+import MyLink, {MyLinkProps} from "./MyLink";
 import {Box, Button, Chip, Paper, Typography} from "@mui/material";
 
-export interface ProjectProps {
+export interface PaperItemProps {
     image: string;
     title: string;
     description: string;
@@ -9,7 +9,7 @@ export interface ProjectProps {
     links: MyLinkProps[];
 }
 
-const Project = (props: ProjectProps) => {
+const PaperItem = (props: PaperItemProps) => {
     return (
         <Paper elevation={1} sx={{p: '20px', width: '45%', m: '20px'}}>
             <img src={props.image} alt={props.title} width='100%'/>
@@ -31,4 +31,4 @@ const Project = (props: ProjectProps) => {
     );
 };
 
-export default Project;
+export default PaperItem;

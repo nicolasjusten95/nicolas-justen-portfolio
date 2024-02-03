@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import {personalInterestsData} from "./PersonalInterestsData";
-import Project from "../projects/Project";
+import PaperItem from "../util/PaperItem";
 
 const PersonalInterests = () => {
     return (
@@ -21,7 +21,7 @@ const PersonalInterests = () => {
                 flexDirection='row'
                 justifyContent='space-between'
                 flexWrap='wrap'>
-                {personalInterestsData.map(interest => <Project {...interest}/>)}
+                {personalInterestsData.map(interest => <PaperItem {...interest}/>)}
             </Box>
         </Box>
     );
