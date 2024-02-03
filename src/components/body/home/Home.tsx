@@ -10,15 +10,18 @@ const Home = () => {
             id='Home'
             mt='50px'
             display='flex'
-            flexDirection='row'
-            justifyContent='space-between'
             width='80%'
-            sx={{scrollMargin: '130px'}}>
+            sx={{
+                scrollMargin: '130px',
+                flexDirection: {xs: 'column', md: 'row'},
+                justifyContent: {xs: 'center', md: 'space-between'},
+                alignItems: {xs: 'center', md: 'start'}
+            }}>
             <Box
                 display='flex'
                 flexDirection='column'
                 alignItems='center'
-                width='20%'>
+                sx={{width: {xs: '70%', md: '30%'}}}>
                 <Avatar
                     alt={"Nicolas Justen"}
                     src={profilePicture}
@@ -30,34 +33,50 @@ const Home = () => {
                 </Typography>
                 {socialMediaIcons}
             </Box>
-            <Box width='70%'>
-                <Typography color='text.primary' variant='h4' mb='15px'>Biography</Typography>
-                <Typography color='text.primary' variant='h6' mb='15px'>
-                    I am a Software Developer with over two years of experience in shipping core features and
-                    algorithms. My current employer&nbsp;
+            <Box
+                sx={{
+                width: {xs: '100%', md: '65%'},
+                mt: {xs: '40px', md: '0px'}
+            }}>
+                <Typography color='text.primary' variant='h4' mb='20px'>Hello! 👋</Typography>
+                <Typography color='text.primary' variant='h6' mb='20px'>
+                    I'm Nicolas, a passionate Software Developer with over two years of experience in shipping
+                    core features and algorithms. At&nbsp;
                     <MyLink href='https://www.sivis.com/' text='SIVIS GmbH'/>
                     &nbsp;
                     <MyLink href='https://www.pointsharp.com/' text='(part of Pointsharp)'/>
-                    &nbsp;is focusing on enterprise-level identity & access management software in cyber security
-                    solutions that is being deployed by over 3,000 corporations across Europe. In my role I am
-                    developing full stack web applications, mostly using Spring Boot and React. My main work is on
-                    the&nbsp;
+                    &nbsp;I'm focusing on enterprise-level identity & access management software in cyber security
+                    solutions that is being deployed by over 3,000 corporations across Europe. My journey with
+                    developing full-stack web applications has me weaving through the intricacies of Spring Boot and
+                    React to contribute to our flagship product: the&nbsp;
                     <MyLink
                         href='https://www.sivis.com/en/product/sivis-authorization-robot'
                         text='Authorization Robot'/>
-                    , a product that automizes the creation of ERP authorization concepts.
+                    . This tool is revolutionizing the way company's create and maintain ERP authorization concepts by
+                    fully automating this process.
                 </Typography>
-                <Typography color='text.primary' variant='h6'>
-                    Prior to joining SIVIS, I got my Master of Science as well as my Bachelor of Science in Business
-                    Administration and Engineering from the&nbsp;
+                <Typography color='text.primary' variant='h6' mb='20px'>
+                    Prior to joining SIVIS my academic path led me through the&nbsp;
                     <MyLink href={'https://www.h-ka.de/'} text={"University of Applied Sciences Karlsruhe"}/>
-                    , where I focused mainly on digitalisation. During my Master's thesis I focused on the integration
-                    of user interactions for the Role Mining Problem into Evolutionary Algorithms and published the
-                    results in the&nbsp;
+                    , where I earned both my Bachelor's and Master's degrees in Business Administration and Engineering
+                    with a focus on digitization. An enriching part of my academic journey was a semester abroad at
+                    the&nbsp;
+                    <MyLink href={'https://tec.mx/en'} text={"Tecnológico de Monterrey"}/>
+                    &nbsp;in Mexico, where I not only broadened my global perspective but also enhanced my adaptability
+                    and problem-solving skills in diverse settings. My Master's thesis ventured into the exciting world
+                    of Role Mining Problems, integrating evolutionary algorithms with user interactions — a pursuit that
+                    culminated in a publication for the&nbsp;
                     <MyLink
                         href='https://www.scitepress.org/PublicationsDetail.aspx?ID=VO0asNCzymE=&t=1'
-                        text='Proceedings of the 15th International Joint Conference on Computational Intelligence - ECTA'/>
+                        text='15th International Joint Conference on Computational Intelligence - ECTA'/>
                     .
+                </Typography>
+                <Typography color='text.primary' variant='h6'>
+                    When I'm not immersed in code, I seek refuge in the rhythm of music and the vastness of nature.
+                    Whether I'm strumming to the classics on my electric guitar, chasing the horizon running on forest
+                    trails or carving through snowy mountains on my skis, life is all about having a good time for
+                    me. Traveling is another avenue where I satisfy my curiosity, immersing myself in diverse cultures
+                    and collecting stories along the way.
                 </Typography>
             </Box>
         </Box>
