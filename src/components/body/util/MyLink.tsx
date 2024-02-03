@@ -1,7 +1,7 @@
 import {Link} from "@mui/material";
 
 
-interface MyLinkProps {
+export interface MyLinkProps {
     href: string;
     text: string;
     color?: string;

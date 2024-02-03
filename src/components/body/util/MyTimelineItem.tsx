@@ -19,7 +19,7 @@ export interface MyTimelineItemProps {
 
 const ExperienceItem = (props: MyTimelineItemProps) => {
 
-    const content = <Paper elevation={1}>
+    const content = <Paper elevation={1} sx={{px: '10px'}}>
         <Box display='flex' flexDirection='column'>
             <Box display='flex' flexDirection='row' width='100%' alignItems='center'>
                 <Box display='flex' mx='30px' height='120px' alignItems='center'>

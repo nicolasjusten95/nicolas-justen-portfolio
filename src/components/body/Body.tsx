@@ -4,6 +4,7 @@ import Skills from "./skills/Skills";
 import Experience from "./experience/Experience";
 import Education from "./education/Education";
 import Publications from "./publications/Publications";
+import Projects from "./projects/Projects";
 
 
 const Body = () => {
@@ -19,6 +20,7 @@ const Body = () => {
             <Experience/>
             <Education/>
             <Publications/>
+            <Projects/>
         </Box>
     );
 }

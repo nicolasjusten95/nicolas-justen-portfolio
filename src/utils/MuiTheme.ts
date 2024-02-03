@@ -30,6 +30,7 @@ export const themeDark = createTheme({
         },
         text: {
             primary: '#e1e6f3',
+            secondary: '#1d212f',
         },
     }
 });
