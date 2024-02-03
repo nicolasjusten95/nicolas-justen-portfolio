@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import Timeline from '@mui/lab/Timeline';
-import {experiences} from "./Experiences";
+import {experienceData} from "./ExperienceData";
 import MyTimelineItem from "../util/MyTimelineItem";
 
 const Experience = () => {
@@ -24,7 +24,7 @@ const Experience = () => {
                 flexDirection='column'
                 justifyContent='start'>
                 <Timeline>
-                    {experiences.map(exp => (
+                    {experienceData.map(exp => (
                         <MyTimelineItem {...exp}/>
                     ))}
                 </Timeline>

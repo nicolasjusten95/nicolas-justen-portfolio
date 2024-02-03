@@ -18,7 +18,7 @@ const relaxationAndVitality: ProjectProps = {
     image: relaxationAndVitalityImage,
     title: 'Professional Website',
     description: 'A professional and user-friendly website for a regional massage business, enhancing online presence and client engagement.',
-    technologies: ['WordPress', 'Hosting', 'WebDesign'],
+    technologies: ['WordPress', 'Hosting', 'Webdesign'],
     links: [
         {href: 'https://relaxationandvitality.de/', text: 'Website'},
         {href: 'https://github.com/nicolasjusten95/algorithm-visualizer', text: 'Github'}

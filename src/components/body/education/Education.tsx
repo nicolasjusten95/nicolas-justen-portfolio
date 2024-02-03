@@ -1,7 +1,7 @@
 import {Box, Typography} from "@mui/material";
 import Timeline from "@mui/lab/Timeline";
 import MyTimelineItem from "../util/MyTimelineItem";
-import {educations} from "./Educations";
+import {educationData} from "./EducationData";
 
 const Education = () => {
     return (
@@ -19,7 +19,7 @@ const Education = () => {
                 flexDirection='column'
                 justifyContent='start'>
                 <Timeline position='left'>
-                    {educations.map(exp => (
+                    {educationData.map(exp => (
                         <MyTimelineItem {...exp}/>
                     ))}
                 </Timeline>
