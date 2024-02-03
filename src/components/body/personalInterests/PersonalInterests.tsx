@@ -1,4 +1,6 @@
 import {Box, Typography} from "@mui/material";
+import {personalInterestsData} from "./PersonalInterestsData";
+import Project from "../projects/Project";
 
 const PersonalInterests = () => {
     return (
@@ -13,7 +15,13 @@ const PersonalInterests = () => {
             <Box width='25%'>
                 <Typography color='text.primary' variant='h4'>Personal Interests</Typography>
             </Box>
-            <Box width='75%' mt='30px'>
+            <Box
+                width='70%'
+                display='flex'
+                flexDirection='row'
+                justifyContent='space-between'
+                flexWrap='wrap'>
+                {personalInterestsData.map(interest => <Project {...interest}/>)}
             </Box>
         </Box>
     );
