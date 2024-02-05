@@ -14,10 +14,11 @@ function App() {
         <ThemeProvider theme={light ? themeLight : themeDark}>
             <CssBaseline />
             <Box
-                minHeight={'100vh'}
-                display={'flex'}
-                flexDirection={'column'}
-                maxWidth={'100vw'}>
+                minHeight='100vh'
+                display='flex'
+                flexDirection='column'
+                width='100vw'
+                maxWidth='100%'>
                 <Header/>
                 <Body/>
                 <Footer/>

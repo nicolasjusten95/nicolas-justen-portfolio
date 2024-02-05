@@ -9,20 +9,27 @@ const Experience = () => {
             id='Experience'
             mt='150px'
             display='flex'
-            flexDirection='row'
-            justifyContent='space-between'
-            width='80%'
-            sx={{scrollMargin: '130px'}}>
-            <Box width='15%'>
-                <Typography color='text.primary' variant='h4'>
+            maxWidth='100%'
+            sx={{
+                width: {xs: '100vw', md: '80%'},
+                scrollMargin: '130px',
+                flexDirection: {xs: 'column', md: 'row'},
+                justifyContent: {xs: 'center', md: 'space-between'},
+                alignItems: {xs: 'center', md: 'start'}
+            }}>
+            <Box sx={{width: {xs: '70%', md: '15%'}}}>
+                <Typography color='text.primary' variant='h4' align='center'>
                     Experience
                 </Typography>
             </Box>
             <Box
-                width='85%'
                 display='flex'
                 flexDirection='column'
-                justifyContent='start'>
+                justifyContent='start'
+                sx={{
+                    width: {xs: '100%', md: '85%'},
+                    mt: {xs: '40px', md: '0px'}
+                }}>
                 <Timeline>
                     {experienceData.map(exp => (
                         <MyTimelineItem {...exp}/>
