@@ -2,6 +2,7 @@ import {Box, Typography} from "@mui/material";
 import Timeline from '@mui/lab/Timeline';
 import {experienceData} from "./ExperienceData";
 import MyTimelineItem from "../util/MyTimelineItem";
+import MyTimelinePaperItem from "../util/MyTimelinePaperItem";
 
 const Experience = () => {
     return (
@@ -30,11 +31,15 @@ const Experience = () => {
                     width: {xs: '100%', md: '85%'},
                     mt: {xs: '40px', md: '0px'}
                 }}>
-                <Timeline>
-                    {experienceData.map(exp => (
-                        <MyTimelineItem {...exp}/>
-                    ))}
+                <Timeline sx={{display: {xs: 'none', md: 'flex'}}}>
+                    {experienceData.map(exp => <MyTimelineItem {...exp}/>)}
                 </Timeline>
+                <Box
+                    flexDirection='column'
+                    p='20px'
+                    sx={{display: {xs: 'flex', md: 'none'}}}>
+                    {experienceData.map(exp => <MyTimelinePaperItem {...exp}/>)}
+                </Box>
             </Box>
         </Box>
     );
