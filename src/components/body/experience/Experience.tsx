@@ -8,7 +8,7 @@ const Experience = () => {
     return (
         <Box
             id='Experience'
-            mt='150px'
+            mt='100px'
             display='flex'
             maxWidth='100%'
             sx={{
