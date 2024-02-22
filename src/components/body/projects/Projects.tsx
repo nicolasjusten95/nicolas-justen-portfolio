@@ -13,16 +13,19 @@ const Projects = () => {
                 width: {xs: '100vw', md: '80%'},
                 scrollMargin: '130px',
                 flexDirection: {xs: 'column', md: 'row'},
-                justifyContent: {xs: 'center', md: 'space-between'},
+                justifyContent: {xs: 'space-evenly', md: 'space-between'},
                 alignItems: {xs: 'center', md: 'start'}
             }}>
             <MySectionHeading title='Projects'/>
             <Box
-                width='70%'
                 display='flex'
                 flexDirection='row'
-                justifyContent='space-between'
-                flexWrap='wrap'>
+                justifyContent='start'
+                flexWrap='wrap'
+            sx={{
+                width: {xs: '100%', md: '85%'},
+                justifyContent: {xs: 'space-evenly', md: 'space-evenly'}
+            }}>
                 {projects.map(project => <PaperItem {...project}/>)}
             </Box>
         </Box>

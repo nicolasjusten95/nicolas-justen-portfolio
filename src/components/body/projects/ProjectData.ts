@@ -2,6 +2,7 @@ import {PaperItemProps} from "../util/PaperItem";
 import algorithmVisualizerImage from "../../../images/algorithm_visualizer.png";
 import relaxationAndVitalityImage from "../../../images/relaxation_and_vitality.png";
 import myPortfolioImage from "../../../images/developer_portfolio.png";
+import spaceWarImage from "../../../images/space_war.png";
 
 const algorithmVisualizer: PaperItemProps = {
     image: algorithmVisualizerImage,
@@ -13,6 +14,16 @@ const algorithmVisualizer: PaperItemProps = {
         {href: 'https://github.com/nicolasjusten95/algorithm-visualizer', text: 'Github'}
     ],
 };
+
+const spaceWar: PaperItemProps = {
+    image: spaceWarImage,
+    title: 'Space War',
+    description: 'A retro arcade-style game where the player takes control of a spaceship to navigate through space filled with allies and enemies.',
+    technologies: ['Python', 'Game development', 'Game design'],
+    links: [
+        {href: 'https://github.com/nicolasjusten95/space-war', text: 'Github'}
+    ]
+}
 
 const relaxationAndVitality: PaperItemProps = {
     image: relaxationAndVitalityImage,
@@ -37,6 +48,7 @@ const myPortfolio: PaperItemProps = {
 
 export const projects = [
     algorithmVisualizer,
+    spaceWar,
     relaxationAndVitality,
     myPortfolio,
 ];
