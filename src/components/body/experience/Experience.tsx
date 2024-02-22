@@ -1,8 +1,9 @@
-import {Box, Typography} from "@mui/material";
+import {Box} from "@mui/material";
 import Timeline from '@mui/lab/Timeline';
 import {experienceData} from "./ExperienceData";
 import MyTimelineItem from "../util/MyTimelineItem";
 import MyTimelinePaperItem from "../util/MyTimelinePaperItem";
+import MySectionHeading from "../util/MySectionHeading";
 
 const Experience = () => {
     return (
@@ -18,11 +19,7 @@ const Experience = () => {
                 justifyContent: {xs: 'center', md: 'space-between'},
                 alignItems: {xs: 'center', md: 'start'}
             }}>
-            <Box sx={{width: {xs: '70%', md: '15%'}}}>
-                <Typography color='text.primary' variant='h4' align='center'>
-                    Experience
-                </Typography>
-            </Box>
+            <MySectionHeading title='Experience'/>
             <Box
                 display='flex'
                 flexDirection='column'

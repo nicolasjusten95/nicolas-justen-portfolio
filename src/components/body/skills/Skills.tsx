@@ -15,12 +15,12 @@ const Skills = () => {
     const getChips = (data: ISkillData[]) => {
         return <Stack
             direction='row'
-            my={'15px'}
+            my='15px'
             flexWrap='wrap'>
             {data.map(skill =>
                 <Chip
                     label={skill.name}
-                    color={'secondary'}
+                    color='secondary'
                     sx={{m: '5px'}}
                 />)}
         </Stack>

@@ -1,9 +1,9 @@
-import {Box, Typography} from "@mui/material";
+import {Box} from "@mui/material";
 import Timeline from "@mui/lab/Timeline";
 import MyTimelineItem from "../util/MyTimelineItem";
 import {educationData} from "./EducationData";
-import {experienceData} from "../experience/ExperienceData";
 import MyTimelinePaperItem from "../util/MyTimelinePaperItem";
+import MySectionHeading from "../util/MySectionHeading";
 
 const Education = () => {
     return (
@@ -19,11 +19,7 @@ const Education = () => {
                 justifyContent: {xs: 'center', md: 'space-between'},
                 alignItems: {xs: 'center', md: 'start'}
             }}>
-            <Box sx={{width: {xs: '70%', md: '15%'}}}>
-                <Typography color='text.primary' variant='h4' align='center'>
-                    Education
-                </Typography>
-            </Box>
+            <MySectionHeading title='Education'/>
             <Box
                 display='flex'
                 flexDirection='column'

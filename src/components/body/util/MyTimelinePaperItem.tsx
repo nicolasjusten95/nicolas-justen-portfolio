@@ -15,9 +15,11 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                         display='flex'
                         alignItems='center'
                         width='20%'
+                        p='2px'
                         sx={{
+                            backgroundColor: 'white',
                             mx: {xs: '10px', md: '30px'},
-                            width: {xs: '20%', sm: '15%', md: '10%'}
+                            width: {xs: '20%', sm: '15%', lg: '10%'}
                         }}>
                         <img src={props.logo} alt={props.company} width='100%'/>
                     </Box>

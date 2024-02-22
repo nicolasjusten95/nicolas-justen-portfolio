@@ -1,6 +1,6 @@
 import {MyTimelineItemProps} from "../util/MyTimelineItem";
-import hkaLogo from "../../../images/hka_logo.png";
-import tecMonterreyLogo from "../../../images/tec_monterrey_logo.jpg";
+import hkaLogo from "../../../images/hka_logo.svg";
+import tecMonterreyLogo from "../../../images/tec_monterrey_logo.png";
 import SchoolIcon from '@mui/icons-material/School';
 
 
@@ -26,7 +26,7 @@ const semesterAbroadMexico: MyTimelineItemProps = {
     logo: tecMonterreyLogo,
     icon: schoolIcon,
     title: 'Semester abroad in Mexico',
-    company: 'Tecnológico de Monterrey, Guadalajara, Mexico',
+    company: 'Tecnológico de Monterrey · Guadalajara, Mexico',
     period: 'Aug. 2018 - Dec. 2018',
     tasks: [],
 };

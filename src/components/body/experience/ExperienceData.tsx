@@ -16,8 +16,8 @@ const softwareDeveloperSivis: MyTimelineItemProps = {
     company: 'SIVIS GmbH · Karlsruhe, Germany',
     period: 'Oct. 2021 - Present',
     tasks: [
-        `Engineered multiple core features including adaptation to SAP-systems and compliance conformity for an evolutionary algorithm in role mining, coordinating development with both internal and external stakeholders.`,
-        `Achieved a 95% reduction in both runtime and memory for the role mining product through problem refactoring.`,
+        `Engineered multiple core features for an evolutionary algorithm in role mining including adaptation to SAP-systems and compliance conformity, coordinating development with both internal and external stakeholders.`,
+        `Achieved a 95% reduction in both runtime and memory usage for the role mining product through problem refactoring.`,
         `Optimized API response time for the role mining product from an average of 100ms to 9ms.`,
         `Designed and implemented a demonstrator for a research project in fraud detection for ERP-Systems.`,
         `Researched and evaluated technologies like GraphQL and RabbitMQ, contributing to decision-making processes.`,
@@ -44,13 +44,13 @@ const bachelorThesisMercedes: MyTimelineItemProps = {
     id: 'bachelorThesisMercedes',
     logo: mercedesLogo,
     icon: productionIcon,
-    title: 'Internship - Bachelor\'s Thesis Production',
+    title: 'Internship - Bachelor\'s Thesis Production Planning',
     company: 'Mercedes-Benz AG · Böblingen, Germany',
     period: 'Sept. 2019 - Feb. 2020',
     tasks: [
         `Conducted a value stream analysis of the current manufactory of interior components.`,
         `Conducted a space analysis of the new facility for the manufactory of interior components.`,
-        `Developed a value stream oriented target layout for the manufactory of interior components.`,
+        `Developed a new value stream oriented target layout for the manufactory of interior components.`,
     ],
 };
 
