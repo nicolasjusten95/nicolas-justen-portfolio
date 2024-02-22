@@ -1,17 +1,22 @@
-import {Box, Typography} from "@mui/material";
+import {Box} from "@mui/material";
 import {projects} from "./ProjectData";
 import PaperItem from "../util/PaperItem";
+import MySectionHeading from "../util/MySectionHeading";
 
 const Projects = () => {
     return (
         <Box
             id='Projects'
-            mt='150px'
+            mt='100px'
             display='flex'
-            flexDirection='row'
-            justifyContent='space-between'
-            width='80%'
-            sx={{scrollMargin: '130px'}}>
+            sx={{
+                width: {xs: '100vw', md: '80%'},
+                scrollMargin: '130px',
+                flexDirection: {xs: 'column', md: 'row'},
+                justifyContent: {xs: 'center', md: 'space-between'},
+                alignItems: {xs: 'center', md: 'start'}
+            }}>
+            <MySectionHeading title='Projects'/>
             <Box
                 width='70%'
                 display='flex'
@@ -19,11 +24,6 @@ const Projects = () => {
                 justifyContent='space-between'
                 flexWrap='wrap'>
                 {projects.map(project => <PaperItem {...project}/>)}
-            </Box>
-            <Box width='15%'>
-                <Typography color='text.primary' variant='h4'>
-                    Projects
-                </Typography>
             </Box>
         </Box>
     );
