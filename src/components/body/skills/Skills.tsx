@@ -1,44 +1,57 @@
 import {Box, Chip, Stack, Typography} from "@mui/material";
+import {frameworksToolsTechnologies, ISkillData, languages, programmingLanguages} from "./SkillsData";
+import MySectionHeading from "../util/MySectionHeading";
 
 const Skills = () => {
 
-    const chipSpacing = '15px';
-    const chipColor = 'secondary';
+    const getHeading = (title: string) => {
+        return <Typography
+            color='text.primary'
+            variant='h6'>
+            {title}
+        </Typography>
+    };
+
+    const getChips = (data: ISkillData[]) => {
+        return <Stack
+            direction='row'
+            my={'15px'}
+            flexWrap='wrap'>
+            {data.map(skill =>
+                <Chip
+                    label={skill.name}
+                    color={'secondary'}
+                    sx={{m: '5px'}}
+                />)}
+        </Stack>
+    };
 
     return (
         <Box
             id='Skills'
-            mt='150px'
+            mt='100px'
             display='flex'
-            flexDirection='row'
-            justifyContent='space-between'
-            width='80%'
-            sx={{scrollMargin: '130px'}}>
-            <Box width='85%' mt='30px'>
-                <Typography color='text.primary' variant='h6'>Programming Languages</Typography>
-                <Stack spacing={chipSpacing} direction='row' m={chipSpacing}>
-                    <Chip label='Java' color={chipColor}></Chip>
-                    <Chip label='Typescript' color={chipColor}></Chip>
-                </Stack>
-                <Typography color='text.primary' variant='h6'>Frameworks, Tools and Technologies</Typography>
-                <Stack spacing={chipSpacing} direction='row' m={chipSpacing}>
-                    <Chip label='Spring Boot' color={chipColor}></Chip>
-                    <Chip label='React' color={chipColor}></Chip>
-                    <Chip label='SQL' color={chipColor}></Chip>
-                    <Chip label='Git' color={chipColor}></Chip>
-                    <Chip label='HTML' color={chipColor}></Chip>
-                    <Chip label='CSS' color={chipColor}></Chip>
-                    <Chip label='Docker' color={chipColor}></Chip>
-                    <Chip label='Kubernetes' color={chipColor}></Chip>
-                </Stack>
-                <Typography color='text.primary' variant='h6'>Languages</Typography>
-                <Stack spacing={chipSpacing} direction='row' m={chipSpacing}>
-                    <Chip label='German' color={chipColor}></Chip>
-                    <Chip label='English' color={chipColor}></Chip>
-                </Stack>
-            </Box>
-            <Box width='15%'>
-                <Typography color='text.primary' variant='h4'>Skills</Typography>
+            maxWidth='100%'
+            sx={{
+                width: {xs: '100vw', md: '80%'},
+                scrollMargin: '130px',
+                flexDirection: {xs: 'column', md: 'row'},
+                justifyContent: {xs: 'center', md: 'space-between'},
+                alignItems: {xs: 'center', md: 'start'}
+            }}>
+            <MySectionHeading title='Skills'/>
+            <Box
+                width='85%'
+                sx={{
+                    width: {xs: '85%', md: '85%'},
+                    mt: {xs: '40px', md: '30px'}
+                }}>
+                {getHeading('Programming Languages')}
+                {getChips(programmingLanguages)}
+                {getHeading('Frameworks, Tools and Technologies')}
+                {getChips(frameworksToolsTechnologies)}
+                {getHeading('Languages')}
+                {getChips(languages)}
             </Box>
         </Box>
     );
