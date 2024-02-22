@@ -1,6 +1,7 @@
 import {Box, Chip, Stack, Typography} from "@mui/material";
 import MyLink from "../util/MyLink";
 import FileCopyIcon from '@mui/icons-material/FileCopy';
+import MySectionHeading from "../util/MySectionHeading";
 
 
 const cite = `@conference{ecta23,
@@ -19,27 +20,28 @@ issn={2184-3236},
 const Publications = () => {
 
     const link = <MyLink href='https://doi.org/10.5220/0012153000003595' text='DOI' color='primary'/>;
-    const onClickCite = () => {navigator.clipboard.writeText(cite)};
+    const onClickCite = () => {
+        navigator.clipboard.writeText(cite)
+    };
 
     return (
         <Box
             id='Publications'
-            mt='150px'
+            mt='100px'
             display='flex'
-            flexDirection='row'
-            justifyContent='space-between'
-            width='80%'
-            sx={{scrollMargin: '130px'}}>
-            <Box width='15%'>
-                <Typography color='text.primary' variant='h4'>
-                    Publications
-                </Typography>
-            </Box>
+            sx={{
+                width: {xs: '100vw', md: '80%'},
+                scrollMargin: '130px',
+                flexDirection: {xs: 'column', md: 'row'},
+                justifyContent: {xs: 'center', md: 'space-between'},
+                alignItems: {xs: 'center', md: 'start'}
+            }}>
+            <MySectionHeading title='Publications'/>
             <Box
-                width='70%'
                 display='flex'
                 flexDirection='column'
-                justifyContent='start'>
+                justifyContent='start'
+                sx={{width: {xs: '85%', md: '70%'}}}>
                 <Box mt='30px'>
                     <Typography color='text.primary' variant='h6'>
                         Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2023).&nbsp;
