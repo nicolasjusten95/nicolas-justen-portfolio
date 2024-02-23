@@ -9,5 +9,4 @@ export const pages: Page [] = [
     {name: 'Education', id: 'Education', key: 4},
     {name: 'Publications', id: 'Publications', key: 5},
     {name: 'Projects', id: 'Projects', key: 6},
-    {name: 'Personal Interests', id: 'PersonalInterests', key: 7},
 ];
