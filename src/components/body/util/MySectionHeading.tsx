@@ -7,7 +7,7 @@ export interface MySectionHeadingProps {
 const MySectionHeading = (props: MySectionHeadingProps) => {
     return (
         <Box sx={{width: {xs: '70%', md: '15%'}}}>
-            <Typography color='text.primary' variant='h4' sx={{align: {xs: 'center', md: 'left'}}}>
+            <Typography color='text.primary' variant='h4' sx={{textAlign: {xs: 'center', md: 'left'}}}>
                 {props.title}
             </Typography>
         </Box>

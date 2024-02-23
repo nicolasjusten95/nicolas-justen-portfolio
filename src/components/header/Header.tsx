@@ -32,10 +32,17 @@ const Header = (props: HeaderProps) => {
         setAnchorNav(null);
     };
 
+    const getOnClick = (title: string) => {
+        return () => {
+            document.getElementById(title)?.scrollIntoView({behavior: 'smooth'});
+            onCloseMenu();
+        }
+    }
+
     const getButtonFromPage = (page: Page): React.ReactElement => {
         return <Button
             key={page.key}
-            onClick={page.onClick}
+            onClick={getOnClick(page.id)}
             color='inherit'>
             <Typography color='text.primary'>{page.name}</Typography>
         </Button>;
@@ -44,7 +51,7 @@ const Header = (props: HeaderProps) => {
     const getMenuItemFromPage = (page: Page): React.ReactElement => {
         return <MenuItem
             key={page.key}
-            onClick={page.onClick}>
+            onClick={getOnClick(page.name)}>
             <ListItemText>
                 <Typography color='text.primary'>{page.name}</Typography>
             </ListItemText>

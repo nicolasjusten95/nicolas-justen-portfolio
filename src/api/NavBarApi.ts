@@ -1,5 +1,5 @@
 export interface Page {
     name: string;
-    onClick: () => void;
+    id: string;
     key: number;
 }
