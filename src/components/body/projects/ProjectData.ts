@@ -3,6 +3,18 @@ import algorithmVisualizerImage from "../../../images/algorithm_visualizer.png";
 import relaxationAndVitalityImage from "../../../images/relaxation_and_vitality.png";
 import myPortfolioImage from "../../../images/developer_portfolio.png";
 import spaceWarImage from "../../../images/space_war.png";
+import chatAppImage from "../../../images/chat_app.png";
+import snakeAiImage from "../../../images/snake_ai.png";
+
+const chatApp: PaperItemProps = {
+    image: chatAppImage,
+    title: 'Chat App',
+    description: 'A realtime chat application for chatting with groups or privately with your friends.',
+    technologies: ['Spring Boot', 'React', 'JWT', 'Websockets'],
+    links: [
+        {href: 'https://github.com/nicolasjusten95/chat-app', text: 'Github'},
+    ],
+};
 
 const algorithmVisualizer: PaperItemProps = {
     image: algorithmVisualizerImage,
@@ -12,6 +24,16 @@ const algorithmVisualizer: PaperItemProps = {
     links: [
         {href: 'https://nicolasjusten95.github.io/algorithm-visualizer/', text: 'Website'},
         {href: 'https://github.com/nicolasjusten95/algorithm-visualizer', text: 'Github'}
+    ],
+};
+
+const snakAI: PaperItemProps = {
+    image: snakeAiImage,
+    title: 'Snake AI',
+    description: 'A retro snake game in python. Play it yourself or whatch an AI learn how to do it.',
+    technologies: ['Python', 'Reinforcement Learning', 'Game Development'],
+    links: [
+        {href: 'https://github.com/nicolasjusten95/snake-ai', text: 'Github'}
     ],
 };
 
@@ -44,10 +66,12 @@ const myPortfolio: PaperItemProps = {
         {href: 'https://nicolasjusten.com/', text: 'Website'},
         {href: 'https://github.com/nicolasjusten95/nicolas-justen-portfolio', text: 'Github'}
     ],
-}
+};
 
 export const projects = [
+    chatApp,
     algorithmVisualizer,
+    snakAI,
     spaceWar,
     relaxationAndVitality,
     myPortfolio,

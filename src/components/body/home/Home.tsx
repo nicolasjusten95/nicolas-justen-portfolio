@@ -62,9 +62,9 @@ const Home = () => {
                     <MyLink href='https://www.sivis.com/' text='SIVIS GmbH'/>
                     &nbsp;(part of&nbsp;
                     <MyLink href='https://www.pointsharp.com/' text='Pointsharp'/>
-                    ) I'm focusing on enterprise-level identity & access management software within cybersecurity
+                    ) I'm focusing mainly on enterprise-level identity & access management software within cybersecurity
                     solutions. Our software is deployed by over 3,000 corporations across Europe, where I play a pivotal
-                    role in the development of our flagship product: the&nbsp;
+                    role in the development of our flagship product: The&nbsp;
                     <MyLink
                         href='https://www.sivis.com/en/product/sivis-authorization-robot'
                         text='Authorization Robot'/>
