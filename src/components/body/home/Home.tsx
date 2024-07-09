@@ -38,7 +38,7 @@ const Home = () => {
                     Software Developer
                 </Typography>
                 <Typography color='text.primary' variant='h6'>
-                    <MyLink href='https://www.sivis.com/' text='SIVIS GmbH'/>
+                    <MyLink href='https://www.pointsharp.com/' text='Pointsharp GmbH'/>
                 </Typography>
                 {socialMediaIcons}
             </Box>
@@ -56,12 +56,13 @@ const Home = () => {
                 <Typography
                     color='text.primary'
                     mb='20px'
+                    textAlign='justify'
                     sx={{typography: {xs: 'body1', md: 'h6'}}}>
                     I'm Nicolas, a passionate Software Developer with over two years of experience in engineering and
                     delivering core features and algorithms. At&nbsp;
-                    <MyLink href='https://www.sivis.com/' text='SIVIS GmbH'/>
-                    &nbsp;(part of&nbsp;
-                    <MyLink href='https://www.pointsharp.com/' text='Pointsharp'/>
+                    <MyLink href='https://www.pointsharp.com/' text='Pointsharp GmbH'/>&nbsp;
+                    (formerly&nbsp;
+                    <MyLink href='https://www.sivis.com/' text='Sivis GmbH'/>
                     ) I'm focusing mainly on enterprise-level identity & access management software within cybersecurity
                     solutions. Our software is deployed by over 3,000 corporations across Europe, where I play a pivotal
                     role in the development of our flagship product: The&nbsp;
@@ -75,6 +76,7 @@ const Home = () => {
                 <Typography
                     color='text.primary'
                     mb='20px'
+                    textAlign='justify'
                     sx={{typography: {xs: 'body1', md: 'h6'}}}>
                     Prior to joining SIVIS my academic path led me through the&nbsp;
                     <MyLink href={'https://www.h-ka.de/'} text={"University of Applied Sciences Karlsruhe"}/>
@@ -84,18 +86,23 @@ const Home = () => {
                     <MyLink href={'https://tec.mx/en'} text={"Tecnológico de Monterrey"}/>
                     &nbsp;in Mexico, which not only expanded my global outlook but also enhanced my adaptability
                     and problem-solving skills in varied environments. My Master's thesis ventured into the exciting
-                    world of Role Mining Problems, integrating evolutionary algorithms with user interactions — a
-                    pursuit that culminated in a publication for the&nbsp;
+                    world of Role Mining Problems, integrating evolutionary algorithms with user interactions. This
+                    research resulted in publications at the prestigious&nbsp;
+                    <MyLink
+                        href='https://www.researchgate.net/publication/381649508_Survival_Strategies_for_Evolutionary_Role_Mining_Algorithms_Using_Expert_Knowledge'
+                        text='GECCO 2024'/>
+                    &nbsp;and&nbsp;
                     <MyLink
                         href='https://www.scitepress.org/PublicationsDetail.aspx?ID=VO0asNCzymE=&t=1'
-                        text='15th International Joint Conference on Computational Intelligence - ECTA'/>
-                    .
+                        text='ECTA 2023'/>
+                    &nbsp;conferences.
                 </Typography>
                 <Typography
                     color='text.primary'
+                    textAlign='justify'
                     sx={{typography: {xs: 'body1', md: 'h6'}}}>
                     When I'm not immersed in code, I seek refuge in the rhythm of music and the vastness of nature.
-                    Whether I'm strumming to the classics on my electric guitar, chasing the horizon running on forest
+                    Whether I'm strumming to the classics on my guitar, chasing the horizon running on forest
                     trails, or contributing as a volunteer skiing instructor at the&nbsp;
                     <MyLink
                         href='https://www.susss.de/home'
