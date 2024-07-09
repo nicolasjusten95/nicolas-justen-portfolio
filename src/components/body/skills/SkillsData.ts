@@ -5,6 +5,7 @@ export interface ISkillData {
 export const programmingLanguages: ISkillData[] = [
     {name: 'Java'},
     {name: 'Typescript'},
+    {name: 'Python'}
 ];
 
 export const frameworksToolsTechnologies: ISkillData[] = [

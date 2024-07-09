@@ -19,6 +19,7 @@ const Skills = () => {
             flexWrap='wrap'>
             {data.map(skill =>
                 <Chip
+                    key={skill.name}
                     label={skill.name}
                     color='secondary'
                     sx={{m: '5px'}}
