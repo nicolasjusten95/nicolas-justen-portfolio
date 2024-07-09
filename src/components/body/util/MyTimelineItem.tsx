@@ -8,10 +8,10 @@ import MyTimelinePaperItem from "./MyTimelinePaperItem";
 
 export interface MyTimelineItemProps {
     id: string;
-    logo: string;
     icon: ReactElement;
     title: string;
     company: string;
+    location: string;
     period: string;
     tasks: string[];
     isFirstItem?: boolean;

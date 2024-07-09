@@ -1,5 +1,3 @@
-import sivisLogo from '../../../images/sivis_logo.jpg';
-import mercedesLogo from '../../../images/mercedes_benz_logo.png';
 import CodeIcon from '@mui/icons-material/Code';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import {MyTimelineItemProps} from "../util/MyTimelineItem";
@@ -8,18 +6,18 @@ import {MyTimelineItemProps} from "../util/MyTimelineItem";
 const productionIcon = <PrecisionManufacturingIcon color='primary' fontSize='large'/>
 const codeIcon = <CodeIcon color='primary' fontSize='large'/>
 
-const softwareDeveloperSivis: MyTimelineItemProps = {
-    id: 'softwareDeveloperSivis',
-    logo: sivisLogo,
+const softwareDeveloperPointsharp: MyTimelineItemProps = {
+    id: 'softwareDeveloperPointsharp',
     icon: codeIcon,
     title: 'Software Developer',
-    company: 'SIVIS GmbH · Karlsruhe, Germany',
+    company: 'Pointsharp GmbH (formerly Sivis GmbH)',
+    location: 'Karlsruhe, Germany',
     period: 'Oct. 2021 - Present',
     tasks: [
         `Engineered multiple core features for an evolutionary algorithm in role mining including adaptation to SAP-systems and compliance conformity, coordinating development with both internal and external stakeholders.`,
-        `Achieved a 95% reduction in both runtime and memory usage for the role mining product through problem refactoring.`,
-        `Optimized API response time for the role mining product from an average of 100ms to 9ms.`,
+        `Achieved a 95% reduction in both runtime and memory usage and optimized the API response times for the role mining product.`,
         `Designed and implemented a demonstrator for a research project in fraud detection for ERP-Systems.`,
+        `Installed and configured the software solutions in both cloud and on-premise environments.`,
         `Researched and evaluated technologies like GraphQL and RabbitMQ, contributing to decision-making processes.`,
         `Conducted impactful presentations, securing 5 major pilot clients for a new product.`
     ],
@@ -28,10 +26,10 @@ const softwareDeveloperSivis: MyTimelineItemProps = {
 
 const masterThesisSivis: MyTimelineItemProps = {
     id: 'masterThesisSivis',
-    logo: sivisLogo,
     icon: codeIcon,
-    title: 'Internship - Master\'s Thesis Software Development',
-    company: 'SIVIS GmbH · Karlsruhe, Germany',
+    title: 'Master\'s Thesis Software Development',
+    company: 'Sivis GmbH',
+    location: 'Karlsruhe, Germany',
     period: 'Feb. 2021 - Aug. 2021',
     tasks: [
         `Engineered four user interactions, designed to integrate expert knowledge into evolutionary algorithms.`,
@@ -42,10 +40,10 @@ const masterThesisSivis: MyTimelineItemProps = {
 
 const bachelorThesisMercedes: MyTimelineItemProps = {
     id: 'bachelorThesisMercedes',
-    logo: mercedesLogo,
     icon: productionIcon,
-    title: 'Internship - Bachelor\'s Thesis Production Planning',
-    company: 'Mercedes-Benz AG · Böblingen, Germany',
+    title: 'Bachelor\'s Thesis Production Planning',
+    company: 'Mercedes-Benz AG',
+    location: 'Böblingen, Germany',
     period: 'Sept. 2019 - Feb. 2020',
     tasks: [
         `Conducted a value stream analysis of the current manufactory of interior components.`,
@@ -56,10 +54,10 @@ const bachelorThesisMercedes: MyTimelineItemProps = {
 
 const internshipMercedes: MyTimelineItemProps = {
     id: 'internshipMercedes',
-    logo: mercedesLogo,
     icon: productionIcon,
-    title: 'Internship - Production Planning',
-    company: 'Mercedes-Benz AG · Sindelfingen, Germany',
+    title: 'Internship Production Planning',
+    company: 'Daimler AG',
+    location: 'Sindelfingen, Germany',
     period: 'Sept. 2017 - Feb. 2018',
     tasks: [
         `Led the implementation of a new planning software for the paint shop.`,
@@ -69,7 +67,7 @@ const internshipMercedes: MyTimelineItemProps = {
 };
 
 export const experienceData: MyTimelineItemProps[] = [
-    softwareDeveloperSivis,
+    softwareDeveloperPointsharp,
     masterThesisSivis,
     bachelorThesisMercedes,
     internshipMercedes,

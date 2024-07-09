@@ -9,21 +9,9 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                 p: '20px',
                 mb: {xs: '20px', md: '0px'}
         }}>
-            <Box display='flex' flexDirection='column'>
+            <Box display='flex' flexDirection='column' ml='15px' mr='15px'>
                 <Box display='flex' flexDirection='row' width='100%' alignItems='center'>
-                    <Box
-                        display='flex'
-                        alignItems='center'
-                        width='20%'
-                        p='2px'
-                        sx={{
-                            backgroundColor: 'white',
-                            mx: {xs: '10px', md: '30px'},
-                            width: {xs: '20%', sm: '15%', lg: '10%'}
-                        }}>
-                        <img src={props.logo} alt={props.company} width='100%'/>
-                    </Box>
-                    <Box sx={{width: {xs: '80%', sm: '85%', md: '90%'}}}>
+                    <Box sx={{width: {xs: '80%', sm: '85%', md: '90%'}}} display='flex' flexDirection='column' alignItems='left'>
                         <Typography
                             color='text.primary'
                             sx={{typography: {xs: 'body1', md: 'h6'}}}>
@@ -33,6 +21,11 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                             color='text.primary'
                             sx={{typography: {xs: 'body2', md: 'body1'}}}>
                             {props.company}
+                        </Typography>
+                        <Typography
+                            color='text.primary'
+                            sx={{typography: {xs: 'body2', md: 'body1'}}}>
+                            {props.location}
                         </Typography>
                         <Typography
                             color='text.primary'
