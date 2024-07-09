@@ -4,7 +4,7 @@ import FileCopyIcon from '@mui/icons-material/FileCopy';
 import MySectionHeading from "../util/MySectionHeading";
 
 
-const cite = `@conference{ecta23,
+const citeEcta = `@conference{ecta23,
 author={Simon Anderer. and Nicolas Justen. and Bernd Scheuermann. and Sanaz Mostaghim.},
 title={Interactive Role Mining Including Expert Knowledge into Evolutionary Algorithms},
 booktitle={Proceedings of the 15th International Joint Conference on Computational Intelligence - ECTA},
@@ -17,11 +17,18 @@ isbn={978-989-758-674-3},
 issn={2184-3236},
 }`;
 
+const citeGecco = `Anderer, Simon & Justen, N. & Scheuermann, Bernd & Mostaghim, Sanaz. (2024). Survival Strategies for Evolutionary Role Mining Algorithms Using Expert Knowledge. `;
+
 const Publications = () => {
 
     const link = <MyLink href='https://doi.org/10.5220/0012153000003595' text='DOI' color='primary'/>;
-    const onClickCite = () => {
-        navigator.clipboard.writeText(cite)
+
+    const onClickCiteEcta = () => {
+        navigator.clipboard.writeText(citeEcta)
+    };
+
+    const onClickCiteGecco = () => {
+        navigator.clipboard.writeText(citeGecco)
     };
 
     return (
@@ -44,15 +51,25 @@ const Publications = () => {
                 sx={{width: {xs: '85%', md: '70%'}}}>
                 <Box mt='30px'>
                     <Typography color='text.primary' variant='h6'>
-                        Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2023).&nbsp;
+                        Anderer, Simon & Justen, Nicolas & Scheuermann, Bernd & Mostaghim, Sanaz. (2024).&nbsp;
+                        <MyLink
+                            href={'https://www.researchgate.net/publication/381649508_Survival_Strategies_for_Evolutionary_Role_Mining_Algorithms_Using_Expert_Knowledge'}
+                            text={'Survival Strategies for Evolutionary Role Mining Algorithms Using Expert Knowledge'}/>
+                        . In The Genetic and Evolutionary Computation Conference (GECCO).
+                    </Typography>
+                    <Stack mt='10px' spacing='10px' direction='row' mb='50px'>
+                        <Chip icon={<FileCopyIcon/>} label={'Cite'} color='secondary' clickable onClick={onClickCiteGecco}/>
+                        {/*<Chip label={link} color='secondary' clickable/>*/}
+                    </Stack>
+                    <Typography color='text.primary' variant='h6'>
+                        Anderer, S.; Justen, N.; Scheuermann, B. and Mostaghim, S. (2023).&nbsp;
                         <MyLink
                             href={'https://www.scitepress.org/PublicationsDetail.aspx?ID=VO0asNCzymE=&t=1'}
                             text={'Interactive Role Mining Including Expert Knowledge into Evolutionary Algorithms'}/>
-                        . In Proceedings of the 15th International Joint Conference on Computational Intelligence -
-                        ECTA.
+                        . In Proceedings of the 15th International Joint Conference on Computational Intelligence - ECTA.
                     </Typography>
                     <Stack mt='10px' spacing='10px' direction='row'>
-                        <Chip icon={<FileCopyIcon/>} label={'Cite'} color='secondary' clickable onClick={onClickCite}/>
+                        <Chip icon={<FileCopyIcon/>} label={'Cite'} color='secondary' clickable onClick={onClickCiteEcta}/>
                         <Chip label={link} color='secondary' clickable/>
                     </Stack>
                 </Box>
