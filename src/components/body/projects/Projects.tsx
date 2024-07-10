@@ -16,7 +16,7 @@ const Projects = () => {
                 justifyContent: {xs: 'space-evenly', md: 'space-between'},
                 alignItems: {xs: 'center', md: 'start'}
             }}>
-            <MySectionHeading title='Projects'/>
+            <MySectionHeading title='Private Projects'/>
             <Box
                 display='flex'
                 flexDirection='row'
