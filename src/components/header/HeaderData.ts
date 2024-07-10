@@ -8,5 +8,5 @@ export const pages: Page [] = [
     {name: 'Experience', id: 'Experience', key: 3},
     {name: 'Education', id: 'Education', key: 4},
     {name: 'Publications', id: 'Publications', key: 5},
-    {name: 'Projects', id: 'Projects', key: 6},
+    {name: 'Private Projects', id: 'Projects', key: 6},
 ];

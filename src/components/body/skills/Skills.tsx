@@ -12,6 +12,13 @@ const Skills = () => {
         </Typography>
     };
 
+    const getLabel = (data: ISkillData) => {
+        return <Typography display='flex' flexDirection='row' alignItems='center' gap='5px'>
+            {data.icon}
+            {data.name}
+        </Typography>
+    }
+
     const getChips = (data: ISkillData[]) => {
         return <Stack
             direction='row'
@@ -20,7 +27,7 @@ const Skills = () => {
             {data.map(skill =>
                 <Chip
                     key={skill.name}
-                    label={skill.name}
+                    label={getLabel(skill)}
                     color='secondary'
                     sx={{m: '5px'}}
                 />)}
@@ -44,14 +51,14 @@ const Skills = () => {
             <Box
                 width='85%'
                 sx={{
-                    width: {xs: '85%', md: '85%'},
+                    width: {xs: '85%', md: '77%'},
                     mt: {xs: '40px', md: '30px'}
                 }}>
                 {getHeading('Programming Languages')}
                 {getChips(programmingLanguages)}
                 {getHeading('Frameworks, Tools and Technologies')}
                 {getChips(frameworksToolsTechnologies)}
-                {getHeading('Languages')}
+                {getHeading('Spoken Languages')}
                 {getChips(languages)}
             </Box>
         </Box>
