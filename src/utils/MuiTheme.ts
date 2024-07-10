@@ -20,7 +20,7 @@ export const themeDark = createTheme({
     palette: {
         background: {
             default: '#1d212f',
-            paper: '#343a40',
+            paper: '#1d212f',
         },
         primary: {
             main: '#2a2f40',

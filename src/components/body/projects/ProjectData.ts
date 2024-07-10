@@ -9,7 +9,7 @@ import snakeAiImage from "../../../images/snake_ai.png";
 const chatApp: PaperItemProps = {
     image: chatAppImage,
     title: 'Chat App',
-    description: 'A realtime fullstack messaging application with a user interface inspired by WhatsApp. It enables users to exchange messages individually or within group chats.',
+    description: 'A realtime fullstack messaging application with a user interface inspired by WhatsApp. It enables users to exchange messages individually or within groups.',
     technologies: ['Spring Boot', 'React', 'JWT', 'Websockets'],
     links: [
         {href: 'https://github.com/nicolasjusten95/chat-app', text: 'Github'},
@@ -31,7 +31,7 @@ const snakAI: PaperItemProps = {
     image: snakeAiImage,
     title: 'Snake AI',
     description: 'A simple retro snake game where you can either take control and play yourself or watch as an AI learns to master the game. Can you beat the high score?',
-    technologies: ['Python', 'Reinforcement Learning', 'Game Development'],
+    technologies: ['Python', 'Reinforcement Learning'],
     links: [
         {href: 'https://github.com/nicolasjusten95/snake-ai', text: 'Github'}
     ],
