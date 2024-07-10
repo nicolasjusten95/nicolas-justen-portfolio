@@ -48,10 +48,10 @@ const Publications = () => {
                 display='flex'
                 flexDirection='column'
                 justifyContent='start'
-                sx={{width: {xs: '85%', md: '70%'}}}>
+                sx={{width: {xs: '85%', md: '80%'}}}>
                 <Box mt='30px'>
-                    <Typography color='text.primary' sx={{typography: {xs: 'body1', md: 'h6'}}}>
-                        Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2024).&nbsp;
+                    <Typography color='text.primary' sx={{typography: {xs: 'body1', md: 'h6'}}} textAlign='justify'>
+                        🗎 Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2024).&nbsp;
                         <MyLink
                             href={'https://www.researchgate.net/publication/381649508_Survival_Strategies_for_Evolutionary_Role_Mining_Algorithms_Using_Expert_Knowledge'}
                             text={'Survival Strategies for Evolutionary Role Mining Algorithms Using Expert Knowledge'}/>
@@ -61,8 +61,8 @@ const Publications = () => {
                         <Chip icon={<FileCopyIcon/>} label={'Cite'} color='secondary' clickable onClick={onClickCiteGecco}/>
                         {/*<Chip label={link} color='secondary' clickable/>*/}
                     </Stack>
-                    <Typography color='text.primary' sx={{typography: {xs: 'body1', md: 'h6'}}}>
-                        Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2023).&nbsp;
+                    <Typography color='text.primary' sx={{typography: {xs: 'body1', md: 'h6'}}} textAlign='justify'>
+                        🗎 Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2023).&nbsp;
                         <MyLink
                             href={'https://www.scitepress.org/PublicationsDetail.aspx?ID=VO0asNCzymE=&t=1'}
                             text={'Interactive Role Mining Including Expert Knowledge into Evolutionary Algorithms'}/>

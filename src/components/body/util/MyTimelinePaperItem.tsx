@@ -33,6 +33,7 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                 <Box mt='10px'>
                     <Typography
                         color='text.primary'
+                        textAlign='justify'
                         sx={{typography: {xs: 'body2', md: 'body1'}}}>
                         <ul className={styles.list}>
                             {props.tasks.map(task => (

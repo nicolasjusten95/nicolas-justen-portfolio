@@ -1,4 +1,3 @@
-import {Box, Paper, Typography} from "@mui/material";
 import {ReactElement} from "react";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import {TimelineConnector, TimelineContent, TimelineDot, TimelineSeparator} from "@mui/lab";
@@ -34,7 +33,7 @@ const ExperienceItem = (props: MyTimelineItemProps) => {
                     <TimelineConnector color='secondary'/>}
             </TimelineSeparator>
             <TimelineContent sx={{py: '15px', textAlign: 'left'}}>
-               <MyTimelinePaperItem {...props}/>
+                <MyTimelinePaperItem {...props}/>
             </TimelineContent>
         </TimelineItem>
     );
