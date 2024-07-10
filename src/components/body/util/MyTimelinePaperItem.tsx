@@ -10,9 +10,9 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                 p: '20px',
                 mb: {xs: '20px', md: '0px'}
         }}>
-            <Box display='flex' flexDirection='column' ml='15px' mr='15px'>
+            <Box display='flex' flexDirection='column' mx='15px' sx={{mx: {xs: '0px', md: '10px'}}}>
                 <Box display='flex' flexDirection='row' width='100%'>
-                    <Box sx={{width: {xs: '80%', sm: '85%', md: '90%'}}}>
+                    <Box width='100%'>
                         <Typography
                             color='text.primary'
                             sx={{typography: {xs: 'body1', md: 'h6'}}}>
