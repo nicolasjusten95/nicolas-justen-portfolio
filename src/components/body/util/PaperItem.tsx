@@ -21,7 +21,7 @@ const PaperItem = (props: PaperItemProps) => {
                 <Box
                     mb='20px'
                     width='100%'
-                    sx={{aspectRatio: '16 / 9'}}>
+                    sx={{aspectRatio: '16 / 8'}}>
                     <img src={props.image} alt={props.title} width='100%' height='100%'/>
                 </Box>
                 <Typography color='text.primary' variant='h6' mb='10px'>{props.title}</Typography>
