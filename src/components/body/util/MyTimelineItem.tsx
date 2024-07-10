@@ -10,7 +10,7 @@ export interface MyTimelineItemProps {
     id: string;
     icon: ReactElement;
     title: string;
-    company: string;
+    company: ReactElement;
     location: string;
     period: string;
     tasks: string[];

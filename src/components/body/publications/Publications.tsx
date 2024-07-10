@@ -50,23 +50,23 @@ const Publications = () => {
                 justifyContent='start'
                 sx={{width: {xs: '85%', md: '70%'}}}>
                 <Box mt='30px'>
-                    <Typography color='text.primary' variant='h6'>
-                        Anderer, Simon & Justen, Nicolas & Scheuermann, Bernd & Mostaghim, Sanaz. (2024).&nbsp;
+                    <Typography color='text.primary' sx={{typography: {xs: 'body1', md: 'h6'}}}>
+                        Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2024).&nbsp;
                         <MyLink
                             href={'https://www.researchgate.net/publication/381649508_Survival_Strategies_for_Evolutionary_Role_Mining_Algorithms_Using_Expert_Knowledge'}
                             text={'Survival Strategies for Evolutionary Role Mining Algorithms Using Expert Knowledge'}/>
-                        . In The Genetic and Evolutionary Computation Conference (GECCO).
+                        . In <i>The Genetic and Evolutionary Computation Conference (GECCO)</i>.
                     </Typography>
                     <Stack mt='10px' spacing='10px' direction='row' mb='50px'>
                         <Chip icon={<FileCopyIcon/>} label={'Cite'} color='secondary' clickable onClick={onClickCiteGecco}/>
                         {/*<Chip label={link} color='secondary' clickable/>*/}
                     </Stack>
-                    <Typography color='text.primary' variant='h6'>
-                        Anderer, S.; Justen, N.; Scheuermann, B. and Mostaghim, S. (2023).&nbsp;
+                    <Typography color='text.primary' sx={{typography: {xs: 'body1', md: 'h6'}}}>
+                        Anderer, Simon; Justen, Nicolas; Scheuermann, Bernd and Mostaghim, Sanaz (2023).&nbsp;
                         <MyLink
                             href={'https://www.scitepress.org/PublicationsDetail.aspx?ID=VO0asNCzymE=&t=1'}
                             text={'Interactive Role Mining Including Expert Knowledge into Evolutionary Algorithms'}/>
-                        . In Proceedings of the 15th International Joint Conference on Computational Intelligence - ECTA.
+                        . In <i>Proceedings of the 15th International Joint Conference on Computational Intelligence - ECTA</i>.
                     </Typography>
                     <Stack mt='10px' spacing='10px' direction='row'>
                         <Chip icon={<FileCopyIcon/>} label={'Cite'} color='secondary' clickable onClick={onClickCiteEcta}/>

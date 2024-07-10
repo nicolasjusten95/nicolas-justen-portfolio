@@ -1,5 +1,6 @@
 import {MyTimelineItemProps} from "../util/MyTimelineItem";
 import SchoolIcon from '@mui/icons-material/School';
+import MyLink from "../util/MyLink";
 
 
 const schoolIcon = <SchoolIcon color='primary' fontSize='large'/>
@@ -7,8 +8,8 @@ const schoolIcon = <SchoolIcon color='primary' fontSize='large'/>
 const masterHka: MyTimelineItemProps = {
     id: 'masterHka',
     icon: schoolIcon,
-    title: 'Master of Science in Business Administration and Engineering',
-    company: 'University of Applied Sciences Karlsruhe',
+    title: 'M.Sc. in Business Administration and Engineering',
+    company: <MyLink href={'https://www.h-ka.de/'} text={"University of Applied Sciences Karlsruhe"}/>,
     location: 'Karlsruhe, Germany',
     period: 'Mar. 2019 - Sep. 2021',
     tasks: [
@@ -23,7 +24,7 @@ const semesterAbroadMexico: MyTimelineItemProps = {
     id: 'bachelorTec',
     icon: schoolIcon,
     title: 'Semester abroad in Mexico',
-    company: 'Tecnológico de Monterrey',
+    company: <MyLink href={'https://tec.mx/en'} text={"Tecnológico de Monterrey"}/>,
     location: 'Guadalajara, Mexico',
     period: 'Aug. 2018 - Dec. 2018',
     tasks: [],
@@ -32,8 +33,8 @@ const semesterAbroadMexico: MyTimelineItemProps = {
 const bachelorHka: MyTimelineItemProps = {
     id: 'bachelorHka',
     icon: schoolIcon,
-    title: 'Bachelor of Science in Business Administration and Engineering',
-    company: 'University of Applied Sciences Karlsruhe',
+    title: 'B.Sc. in Business Administration and Engineering',
+    company: <MyLink href={'https://www.h-ka.de/'} text={"University of Applied Sciences Karlsruhe"}/>,
     location: 'Karlsruhe, Germany',
     period: 'Oct. 2015 - Feb. 2019',
     tasks: [

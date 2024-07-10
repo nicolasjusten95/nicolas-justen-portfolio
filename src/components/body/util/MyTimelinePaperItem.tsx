@@ -1,5 +1,6 @@
 import {MyTimelineItemProps} from "./MyTimelineItem";
 import {Box, Paper, Typography} from "@mui/material";
+import styles from './MyTimelinePaperItem.module.scss';
 
 const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
     return (
@@ -10,8 +11,8 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                 mb: {xs: '20px', md: '0px'}
         }}>
             <Box display='flex' flexDirection='column' ml='15px' mr='15px'>
-                <Box display='flex' flexDirection='row' width='100%' alignItems='center'>
-                    <Box sx={{width: {xs: '80%', sm: '85%', md: '90%'}}} display='flex' flexDirection='column' alignItems='left'>
+                <Box display='flex' flexDirection='row' width='100%'>
+                    <Box sx={{width: {xs: '80%', sm: '85%', md: '90%'}}}>
                         <Typography
                             color='text.primary'
                             sx={{typography: {xs: 'body1', md: 'h6'}}}>
@@ -25,12 +26,7 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                         <Typography
                             color='text.primary'
                             sx={{typography: {xs: 'body2', md: 'body1'}}}>
-                            {props.location}
-                        </Typography>
-                        <Typography
-                            color='text.primary'
-                            sx={{typography: {xs: 'body2', md: 'body1'}}}>
-                            {props.period}
+                            {props.period + ' · ' + props.location}
                         </Typography>
                     </Box>
                 </Box>
@@ -38,9 +34,9 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                     <Typography
                         color='text.primary'
                         sx={{typography: {xs: 'body2', md: 'body1'}}}>
-                        <ul>
-                            {props.tasks.map((task, index) => (
-                                <li key={index}>{task}</li>
+                        <ul className={styles.list}>
+                            {props.tasks.map(task => (
+                                <li key={task}>{task}</li>
                             ))}
                         </ul>
                     </Typography>

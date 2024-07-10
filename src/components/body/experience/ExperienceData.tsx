@@ -1,6 +1,8 @@
 import CodeIcon from '@mui/icons-material/Code';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import {MyTimelineItemProps} from "../util/MyTimelineItem";
+import {Typography} from "@mui/material";
+import MyLink from "../util/MyLink";
 
 
 const productionIcon = <PrecisionManufacturingIcon color='primary' fontSize='large'/>
@@ -10,7 +12,12 @@ const softwareDeveloperPointsharp: MyTimelineItemProps = {
     id: 'softwareDeveloperPointsharp',
     icon: codeIcon,
     title: 'Software Developer',
-    company: 'Pointsharp GmbH (formerly Sivis GmbH)',
+    company: <Typography>
+        <MyLink href='https://www.pointsharp.com/' text='Pointsharp GmbH'/>&nbsp;
+        (formerly&nbsp;
+        <MyLink href='https://www.sivis.com/' text='Sivis GmbH'/>
+        )
+    </Typography>,
     location: 'Karlsruhe, Germany',
     period: 'Oct. 2021 - Present',
     tasks: [
@@ -28,7 +35,7 @@ const masterThesisSivis: MyTimelineItemProps = {
     id: 'masterThesisSivis',
     icon: codeIcon,
     title: 'Master\'s Thesis Software Development',
-    company: 'Sivis GmbH',
+    company: <MyLink href='https://www.sivis.com/' text='Sivis GmbH'/>,
     location: 'Karlsruhe, Germany',
     period: 'Feb. 2021 - Aug. 2021',
     tasks: [
@@ -42,7 +49,7 @@ const bachelorThesisMercedes: MyTimelineItemProps = {
     id: 'bachelorThesisMercedes',
     icon: productionIcon,
     title: 'Bachelor\'s Thesis Production Planning',
-    company: 'Mercedes-Benz AG',
+    company: <MyLink href='https://www.mercedes-benz.com/' text='Mercedes-Benz AG'/>,
     location: 'Böblingen, Germany',
     period: 'Sept. 2019 - Feb. 2020',
     tasks: [
@@ -56,7 +63,7 @@ const internshipMercedes: MyTimelineItemProps = {
     id: 'internshipMercedes',
     icon: productionIcon,
     title: 'Internship Production Planning',
-    company: 'Daimler AG',
+    company: <MyLink href='https://www.mercedes-benz.com/' text='Daimler AG'/>,
     location: 'Sindelfingen, Germany',
     period: 'Sept. 2017 - Feb. 2018',
     tasks: [

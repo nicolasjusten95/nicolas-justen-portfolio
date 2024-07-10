@@ -10,8 +10,14 @@ export interface MyLinkProps {
 const MyLink = (props: MyLinkProps) => {
     return (
         <Link
+            sx={{
+                textDecoration: 'none',
+                '&:hover': {
+                    textDecoration: 'underline',
+                },
+            }}
             href={props.href}
-            color={props.color ?? 'text.primary'}
+            color={props.color ?? 'secondary'}
             target="_blank"
             rel="noreferrer">
             {props.text}
