@@ -101,16 +101,16 @@ const Home = () => {
                     color='text.primary'
                     textAlign='justify'
                     sx={{typography: {xs: 'body1', md: 'h6'}}}>
-                    When I'm not immersed in code, I seek refuge in the rhythm of music and the vastness of nature.
-                    Whether I'm strumming to the classics on my guitar, chasing the horizon running on forest
-                    trails, or contributing as a volunteer skiing instructor at the&nbsp;
+                    When I'm not coding, you'll often find me lost in the rhythm of music or the serenity of nature. I
+                    love strumming classics on my guitar and find incredible peace running through forest trails. On
+                    snowy days, I'm thrilled to volunteer as a skiing instructor at the&nbsp;
                     <MyLink
                         href='https://www.susss.de/home'
                         text='Ski- und Snowboardschule Schönbuch e. V.'/>
-                    , a regional skiing club, life for me is all about making connections and enjoying every moment.
-                    Traveling is another avenue where I satisfy my curiosity. Whether it's a long journey like
-                    my work and travel year in Australia or a brief trip, immersing myself in diverse cultures and
-                    collecting stories along the way fuels my creativity and broadens my understanding of the world.
+                    , a regional skiing club. Travel is another passion of mine. Whether it' embarking on a lengthy
+                    journey like my work and travel year in Australia, my semester abroad in Mexico, or just a quick
+                    getaway, I thrive on immersing myself in new cultures and collecting stories. These experiences not
+                    only fuel my creativity but also deepen my understanding of the world around me.
                 </Typography>
             </Box>
         </Box>
