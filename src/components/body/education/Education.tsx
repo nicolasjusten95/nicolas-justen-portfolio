@@ -35,7 +35,7 @@ const Education = () => {
                 </Timeline>
                 <Box
                     flexDirection='column'
-                    p='20px'
+                    p='5px'
                     sx={{display: {xs: 'flex', md: 'none'}}}>
                     {educationData.map(exp => <MyTimelinePaperItem {...exp}/>)}
                 </Box>

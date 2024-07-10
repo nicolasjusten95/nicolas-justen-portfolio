@@ -33,7 +33,7 @@ const Experience = () => {
                 </Timeline>
                 <Box
                     flexDirection='column'
-                    p='20px'
+                    mx='5px'
                     sx={{display: {xs: 'flex', md: 'none'}}}>
                     {experienceData.map(exp => <MyTimelinePaperItem {...exp}/>)}
                 </Box>

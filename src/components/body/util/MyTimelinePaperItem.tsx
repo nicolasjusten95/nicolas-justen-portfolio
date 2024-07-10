@@ -5,10 +5,9 @@ import styles from './MyTimelinePaperItem.module.scss';
 const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
     return (
         <Paper
-            elevation={1}
+            elevation={0}
             sx={{
                 p: '20px',
-                mb: {xs: '20px', md: '0px'}
         }}>
             <Box display='flex' flexDirection='column' mx='15px' sx={{mx: {xs: '0px', md: '10px'}}}>
                 <Box display='flex' flexDirection='row' width='100%'>
@@ -30,7 +29,7 @@ const MyTimelinePaperItem = (props: MyTimelineItemProps) => {
                         </Typography>
                     </Box>
                 </Box>
-                <Box mt='10px'>
+                <Box mt='0px'>
                     <Typography
                         color='text.primary'
                         textAlign='justify'
